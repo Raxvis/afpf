@@ -32,7 +32,7 @@
 		"url": "git+https://github.com/Prefinem/afpf"
 	},
 	"scripts": {
-		"build": "rm -rf dist && mkdir dist && cp package.json ./dist/package.json && cp -r src/* dist/",
+		"build": "./build.sh",
 		"clean": "yarn lint && yarn prettify",
 		"docs": "jsdoc --configure .jsdoc.json --verbose",
 		"docs:md": "jsdoc2md src/**.js >> DOCS.md",

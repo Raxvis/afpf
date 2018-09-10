@@ -40,6 +40,6 @@ or
 
     npm i afpf
 
-# API Docs
+# Docs
 
 [DOCS](https://github.com/Prefinem/afpf/blob/master/DOCS.md)
