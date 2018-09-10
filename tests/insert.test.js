@@ -1,10 +1,10 @@
 /* global test, expect */
 
 const fn = require('./../src');
-const requestObj = { test: 'this' };
+const requestObj = { foo: 'bar' };
 const insertObj = {
+	baz: 'bar',
 	foo: 'bar',
-	test: 'this',
 };
 const sleep = (params) =>
 	new Promise((resolve) => {
@@ -22,9 +22,9 @@ test('insert handles arrays with promise', async () => {
 });
 
 test('insert handles objects', async () => {
-	await expect(fn.insert('foo', () => 'bar')(requestObj)).resolves.toEqual(insertObj);
+	await expect(fn.insert('baz', () => 'bar')(requestObj)).resolves.toEqual(insertObj);
 });
 
 test('insert handles objects with promise', async () => {
-	await expect(fn.insert('foo', () => sleep('bar'))(requestObj)).resolves.toEqual(insertObj);
+	await expect(fn.insert('baz', () => sleep('bar'))(requestObj)).resolves.toEqual(insertObj);
 });

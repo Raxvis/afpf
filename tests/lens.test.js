@@ -1,7 +1,7 @@
 /* global test, expect */
 
 const fn = require('./../src');
-const requestObj = { test: 'this' };
+const requestObj = { foo: 'bar' };
 const sleep = (params) =>
 	new Promise((resolve) => {
 		setTimeout(() => {
@@ -18,9 +18,13 @@ test('lens handles arrays with promise', async () => {
 });
 
 test('lens handles objects', async () => {
-	await expect(fn.lens(() => 'bar')(requestObj)).resolves.toEqual({ test: 'bar' });
+	await expect(fn.lens(() => 'baz')(requestObj)).resolves.toEqual({ foo: 'baz' });
 });
 
 test('lens handles objects with promise', async () => {
 	await expect(fn.lens((value) => sleep(value))(requestObj)).resolves.toEqual(requestObj);
+});
+
+test('lens handles multiple params', async () => {
+	await expect(fn.lens((value, update) => update)(requestObj, 'baz')).resolves.toEqual({ foo: 'baz' });
 });

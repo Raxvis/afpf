@@ -20,8 +20,6 @@ These docs are awful. If you are interested in using one of the library and need
 
 # Getting Started
 
-**ES6 Imports**
-
 ```js
 cosnt afpf = require('afpf');
 

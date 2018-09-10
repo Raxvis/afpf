@@ -10,7 +10,7 @@
 	},
 	"plugins": ["plugins/markdown"],
 	"templates": {
-		"referenceTitle": "Lambdify",
+		"referenceTitle": "afpf",
 		"disableSort": false
 	},
 	"opts": {
