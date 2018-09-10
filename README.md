@@ -21,12 +21,15 @@ These docs are awful. If you are interested in using one of the library and need
 # Getting Started
 
 ```js
-cosnt afpf = require('afpf');
+const afpf = require('afpf');
 
-cosnt fn1 = () => console.log('Function 1');
+const fn1 = () => console.log('Function 1');
 const fn2 = () => console.log('Function 2');
 
-const run = afpf.pipe(fn1, fn2)();
+const run = afpf.pipe(
+	fn1,
+	fn2,
+)();
 ```
 
 # Installation
