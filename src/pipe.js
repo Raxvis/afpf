@@ -6,7 +6,7 @@
  * @function
  * @since 0.0.1
  * @param {Function} func Functions to be executed syncronously with their results passing to the next function
- * @returns {Any} Response from final function passed
+ * @returns {Function} Function that will execute each function in order while passing the parameters to each function
  * @example
  *
  * const pipe = require('afpf/pipe');

@@ -37,7 +37,7 @@
 		"docs": "jsdoc --configure .jsdoc.json --verbose",
 		"docs:md": "jsdoc2md src/**.js >> DOCS.md",
 		"lint": "eslint src/*.js --fix",
-		"precommit": "lint-staged",
+		"precommit": "yarn docs:md && git add DOCS.md && lint-staged",
 		"prettify": "prettier --config ./.prettierrc.json --write \"src/*.js\"",
 		"pub": "yarn clean && yarn build && yarn publish dist/",
 		"staged": "lint-staged",
