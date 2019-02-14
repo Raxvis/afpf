@@ -5,9 +5,6 @@ language: node_js
 node_js:
   - 9
 cache: yarn
-before_install:
-  - yarn global add jest
-  - yarn global add codecov
 install:
   - yarn
 before_script:
@@ -17,7 +14,7 @@ before_script:
 script:
   - yarn clean
   - yarn test
-  - codecov
+  - ./node_modules/.bin/codecov
 after_script:
   - ./cc-test-reporter upload-coverage < coverage/lcov.info
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
