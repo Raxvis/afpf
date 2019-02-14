@@ -14,7 +14,7 @@
 		"jsdoc-to-markdown": "^4.0.1",
 		"lint-staged": "^8.0.0",
 		"pkg-ok": "^2.1.0",
-		"prettier": "1.15.2"
+		"prettier": "1.15.3"
 	},
 	"homepage": "https://github.com/Prefinem/afpf",
 	"license": "MIT",
