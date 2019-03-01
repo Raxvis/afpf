@@ -14,7 +14,7 @@
     "jsdoc": "^3.5.5",
     "jsdoc-template": "https://github.com/braintree/jsdoc-template",
     "jsdoc-to-markdown": "^4.0.1",
-    "lint-staged": "^8.0.0",
+    "lint-staged": "^8.1.5",
     "pkg-ok": "^2.1.0",
     "prettier": "1.15.3"
   },
