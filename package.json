@@ -14,7 +14,15 @@
 		"lint-staged": "9.5.0",
 		"prettier": "1.19.1"
 	},
+	"files": [
+		"src/"
+	],
 	"homepage": "https://github.com/Prefinem/afpf",
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn docs && git add DOCS.md && lint-staged"
+		}
+	},
 	"license": "MIT",
 	"lint-staged": {
 		"*.js": [
@@ -24,6 +32,7 @@
 			"git add"
 		]
 	},
+	"main": "src/index.js",
 	"name": "afpf",
 	"repository": {
 		"type": "git",
@@ -38,10 +47,5 @@
 		"staged": "lint-staged",
 		"test": "jest --coverage"
 	},
-	"version": "0.0.4",
-	"husky": {
-		"hooks": {
-			"pre-commit": "yarn docs && git add DOCS.md && lint-staged"
-		}
-	}
+	"version": "0.0.5"
 }
