@@ -38,7 +38,7 @@
 		"staged": "lint-staged",
 		"test": "jest --coverage"
 	},
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"husky": {
 		"hooks": {
 			"pre-commit": "yarn docs && git add DOCS.md && lint-staged"
