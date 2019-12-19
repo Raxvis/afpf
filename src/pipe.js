@@ -9,7 +9,7 @@
  * @returns {Function} Function that will execute each function in order while passing the parameters to each function
  * @example
  *
- * const pipe = require('afpf/pipe');
+ * const { pipe } = require('afpf');
  *
  * const fn1 = (message) => `New Message: ${message}`;
  * const fn2 = (message, date) => `${date} | ${message}`;

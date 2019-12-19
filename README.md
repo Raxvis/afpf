@@ -1,16 +1,14 @@
 # afpf - Async Functional Programming Functions
 
-[![npm pack age](https://nodei.co/npm/afpf.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/afpf)
+[![Version](https://img.shields.io/npm/v/afpf?style=for-the-badge)](https://npmjs.org/package/afpf)
 
-[![Version](https://badge.fury.io/js/afpf.svg)](https://npmjs.org/package/afpf) [![Build Status](https://travis-ci.org/Prefinem/afpf.svg)](https://travis-ci.org/Prefinem/afpf)
+[![Build Status](https://img.shields.io/github/workflow/status/Prefinem/afpf/ci?style=for-the-badge)](https://github.com/Prefinem/afpf/actions) [![Maintainability](https://img.shields.io/codeclimate/coverage-letter/Prefinem/afpf?style=for-the-badge)](https://codeclimate.com/github/Prefinem/afpf/maintainability) [![Test Coverage](https://img.shields.io/codecov/c/github/Prefinem/afpf?style=for-the-badge)](https://codecov.io/gh/Prefinem/afpf)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/4f911850391938e811f1/maintainability)](https://codeclimate.com/github/Prefinem/afpf/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/4f911850391938e811f1/test_coverage)](https://codeclimate.com/github/Prefinem/afpf/test_coverage) [![Greenkeeper badge](https://badges.greenkeeper.io/Prefinem/afpf.svg)](https://greenkeeper.io/)
+![Monthly Downloads](https://img.shields.io/npm/dm/afpf?style=for-the-badge)
 
-![Weekly Downloads](https://img.shields.io/npm/dw/afpf.svg) ![Monthly Downloads](https://img.shields.io/npm/dm/afpf.svg) ![Yearly Downloads](https://img.shields.io/npm/dy/afpf.svg)
+![Issues](https://img.shields.io/github/issues/Prefinem/afpf?style=for-the-badge) ![Pull Requests](https://img.shields.io/github/issues-pr/Prefinem/afpf?style=for-the-badge)
 
-![Issues](https://img.shields.io/github/issues/Prefinem/afpf.svg) ![Pull Requests](https://img.shields.io/github/issues-pr/Prefinem/afpf.svg)
-
-![Dependencies](https://david-dm.org/Prefinem/afpf.svg) ![Dev Dependencies](https://david-dm.org/Prefinem/afpf/dev-status.svg)
+![Dependencies](https://img.shields.io/david/Prefinem/afpf?style=for-the-badge) ![Dev Dependencies](https://img.shields.io/david/dev/Prefinem/afpf?style=for-the-badge)
 
 afpf is a set of functions that make it easy to write functional scripts with async / await support
 

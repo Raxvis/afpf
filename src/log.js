@@ -9,7 +9,7 @@ const constant = require('./constant');
  * @returns {Any} First parameter passed to it
  * @example
  *
- * const log = require('afpf/log');
+ * const { log } = require('afpf');
  *
  * const output = log(['foo']);
  * // => console.log(["foo"]);

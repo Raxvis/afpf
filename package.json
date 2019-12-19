@@ -1,53 +1,47 @@
 {
-  "author": {
-    "email": "prefinem@gmail.com",
-    "name": "Prefinem",
-    "url": "https://prefinem.com"
-  },
-  "devDependencies": {
-    "codecov": "^3.2.0",
-    "eslint": "6.7.2",
-    "eslint-config-prettier": "^6.0.0",
-    "husky": "^3.0.0",
-    "jest": "^24.1.0",
-    "jest-junit": "^10.0.0",
-    "jsdoc": "^3.5.5",
-    "jsdoc-template": "https://github.com/braintree/jsdoc-template",
-    "jsdoc-to-markdown": "^5.0.0",
-    "lint-staged": "^9.0.0",
-    "pkg-ok": "^2.1.0",
-    "prettier": "1.19.1"
-  },
-  "homepage": "https://github.com/Prefinem/afpf",
-  "license": "MIT",
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --config ./.prettierrc.json --write",
-      "jest --bail --findRelatedTests",
-      "git add"
-    ]
-  },
-  "name": "afpf",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Prefinem/afpf"
-  },
-  "scripts": {
-    "build": "./build.sh",
-    "clean": "yarn lint && yarn prettify",
-    "docs": "jsdoc --configure .jsdoc.json --verbose",
-    "docs:md": "jsdoc2md src/**.js >> DOCS.md",
-    "lint": "eslint src/*.js --fix",
-    "prettify": "prettier --config ./.prettierrc.json --write \"src/*.js\"",
-    "pub": "yarn clean && yarn build && yarn publish dist/",
-    "staged": "lint-staged",
-    "test": "jest --coverage"
-  },
-  "version": "0.0.3",
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn docs:md && git add DOCS.md && lint-staged"
-    }
-  }
+	"author": {
+		"email": "prefinem@gmail.com",
+		"name": "Prefinem",
+		"url": "https://prefinem.com"
+	},
+	"devDependencies": {
+		"eslint": "6.7.2",
+		"eslint-config-prettier": "^6.0.0",
+		"husky": "^3.0.0",
+		"jest": "^24.1.0",
+		"jest-junit": "^10.0.0",
+		"jsdoc-to-markdown": "^5.0.0",
+		"lint-staged": "^9.0.0",
+		"prettier": "1.19.1"
+	},
+	"homepage": "https://github.com/Prefinem/afpf",
+	"license": "MIT",
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix",
+			"prettier --config ./.prettierrc.json --write",
+			"jest --bail --findRelatedTests",
+			"git add"
+		]
+	},
+	"name": "afpf",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Prefinem/afpf"
+	},
+	"scripts": {
+		"clean": "yarn lint && yarn prettify",
+		"docs": "jsdoc2md src/**.js >> DOCS.md",
+		"lint": "eslint src/*.js --fix",
+		"prettify": "prettier --config ./.prettierrc.json --write \"src/*.js\"",
+		"pub": "yarn clean && yarn build && yarn publish dist/",
+		"staged": "lint-staged",
+		"test": "jest --coverage"
+	},
+	"version": "0.0.3",
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn docs && git add DOCS.md && lint-staged"
+		}
+	}
 }

@@ -9,7 +9,7 @@
  * @returns {Function} The wrapped function which returns the first parameter
  * @example
  *
- * const constant = require('afpf/constant');
+ * const { constant } = require('afpf');
  *
  * const log = (message) => console.log(message);
  * const wrappedLog = constant(log);

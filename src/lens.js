@@ -17,7 +17,7 @@ const lensObject = (func) => async (params, ...rest) => {
  * @returns {Function} A function which accepts an array or object and returns the array or object with each key processed by the initial function
  * @example
  *
- * const lens = require('afpf/lens');
+ * const { lens } = require('afpf');
  *
  * const addBar = (el) => `${el}Bar`;
  * const wrappedFn = lens(addBar);

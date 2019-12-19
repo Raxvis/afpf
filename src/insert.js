@@ -19,7 +19,7 @@ const insertObject = (index, func) => async (params, ...rest) =>
  * @returns {Function} A function which accepts an array or object and returns the array or object with the inserted value
  * @example
  *
- * const insert = require('afpf/insert');
+ * const { insert } = require('afpf');
  *
  * const addFoo = () => 'bar';
  * const wrappedFn = insert('foo', addFoo);
