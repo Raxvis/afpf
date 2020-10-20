@@ -51,7 +51,7 @@ jobs:
       - name: yarn install
         run: yarn
       - name: Code Climate
-        uses: paambaati/codeclimate-action@v2.3.0
+        uses: paambaati/codeclimate-action@v2.7.4
         env:
           CC_TEST_REPORTER_ID: 72252a723393f39aa1459395c4ce5b84e55670f07ec5bdc9d2bbff5808d0945d
         with:
